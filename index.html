@@ -5189,7 +5189,7 @@ function setTextIfExists(id, value) {
       const pistas = [];
       if (analisis.tiposDetectados.length) pistas.push("quita el tipo de documento para ampliar la busqueda");
       if (analisis.areasDetectadas.length) pistas.push("prueba sin el area o departamento");
-      if (analisis.anios.length) pistas.push("prueba sin el anio");
+      if (analisis.anios.length) pistas.push("prueba sin el año");
       pistas.push("usa palabras como politica, formato, procedimiento, licencia, permiso, descriptor, vacaciones o cumplimiento");
       return `No encontre una coincidencia clara. Te sugiero: ${escapeHtml(pistas.join("; "))}.`;
     }
@@ -6154,7 +6154,7 @@ function setTextIfExists(id, value) {
 
       if (analisis.anios && analisis.anios.includes(obtenerAnioDocumentoAgente(doc))) {
         puntaje += 10;
-        razones.push("coincide con el anio solicitado");
+        razones.push("coincide con el año solicitado");
       }
 
       if (analisis.quiereRecientes) {
